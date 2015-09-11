@@ -318,3 +318,12 @@ footer {
 /* min-width 1441px, xlarge screens */
 /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
 /* min-width 1921px, xxlarge screens */
+#av-overlay-wrap {
+  font-family: 'Lato';
+  background: rgba(237, 38, 35, 0.9) !important; }
+  #av-overlay-wrap #av-overlay {
+    border-radius: 10px; }
+    #av-overlay-wrap #av-overlay .logo {
+      text-align: center; }
+    #av-overlay-wrap #av-overlay h1 {
+      font-size: 18px; }

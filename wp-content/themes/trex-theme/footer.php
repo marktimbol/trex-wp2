@@ -11,14 +11,12 @@
 					</div>
 
 					<div class="col-md-8">
-						<h3>T REX General Trading LLC</h3>
-						<p class="copyright">&copy; 2015 T REX General Trading. All Rights Reserved.</p>
+						<h3>T Rex General Trading LLC</h3>
+						<p class="copyright">&copy; 2015 T Rrex General Trading. All Rights Reserved.</p>
 					</div>
 
 					<div class="col-md-2">
 						<p class="social-icons">
-							<a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-							<a href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
 							<a href="#" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
 						</p>
 					</div>	

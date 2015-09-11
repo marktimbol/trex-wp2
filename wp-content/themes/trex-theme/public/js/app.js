@@ -23,7 +23,7 @@ $(function(){
     markers: [
       { latLng: [23.424076, 53.847818], name: 'United Arab Emirates' },
       { latLng: [20.593684, 78.96288], name: 'India' },
-      { latLng: [12.226079, -69.060087], name: 'Netherlands' },
+      { latLng: [52.701183, 5.098217], name: 'Netherlands' },
       { latLng: [51.165691, 10.451526], name: 'Germany' },
       { latLng: [55.378051, -3.435973], name: 'United Kingdom' },
       { latLng: [46.227638, 2.213749], name: 'France' },

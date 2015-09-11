@@ -2,6 +2,13 @@
 /**
  * Template Name: Page with Featured Image
  */
+$middleEastCountries = array(
+    'BH', 'IR', 'IQ', 'IL', 'JO', 'KW', 'LB', 'OM', 'PS', 'QA', 'SA', 'SY', 'AE', 'YE', 'EG', 'TR'
+);
+$visitorCountryData = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='.$_SERVER['REMOTE_ADDR']));
+
+$visitorCountry = $visitorCountryData['geoplugin_countryCode'];
+
 get_header();
 global $post;
 the_post();
@@ -19,7 +26,19 @@ the_post();
 				<?php } ?>
 				<div class="col-md-8">
 					<h2 class="trex-title"><?=get_the_title();?></h2>
-					<?php the_content(); ?>
+					<?php
+						if( in_array($visitorCountry, $middleEastCountries) ) {
+
+							if( get_field('middle_east_content') == '') {
+								the_content();
+							} else {
+								the_field('middle_east_content');
+							}
+						
+						} else {
+							the_content();
+						}
+					?>
 				</div>
 
 				<div class="clearfix"></div>

@@ -29,9 +29,9 @@ $visitorCountry = $visitorCountryData['geoplugin_countryCode'];
 			}
 		<?php } ?>
 
-
-
 	</style>
+
+	
 	<?= wp_head(); ?>
 </head>
 <body>
@@ -68,7 +68,16 @@ $visitorCountry = $visitorCountryData['geoplugin_countryCode'];
 
 						<div class="col-md-9 col-xs-8">
 							<nav class="main-nav float-right">
-								<?php wp_nav_menu( array('menu' => 'MainMenu' )); ?>								
+								<?php
+									if( in_array($visitorCountry, $middleEastCountries) ) {
+
+										wp_nav_menu( array('menu' => 'MainMenu-ME' ));
+
+									} else {
+
+										wp_nav_menu( array('menu' => 'MainMenu' ));
+									}
+								?>							
 							</nav>
 						</div>
 					</div>

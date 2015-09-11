@@ -1,0 +1,14 @@
+#av-overlay-wrap {
+	font-family: 'Lato';
+	background: rgba(237,38,35,0.9) !important;
+	#av-overlay {
+		border-radius: 10px;
+		.logo {
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 18px;
+		}
+	}	
+}
